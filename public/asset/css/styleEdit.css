@@ -1,0 +1,175 @@
+/* تكبير حجم النموذج */
+.container {
+    max-width: 800px; /* تعديل العرض الأقصى للنموذج */
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 32px;
+}
+
+/* تنسيق حقول الإدخال بحجم أكبر */
+.form-control {
+    width: 100%;
+    font-size: 25px;
+
+}
+
+/* تنسيق زر الرجوع بحجم أكبر */
+.btn-primary {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    padding: 0.5rem 1rem; /* تكبير حجم الحشوة */
+    font-size: 1rem; /* تكبير حجم الخط */
+}
+
+.btn-primary:hover {
+    background-color: #357cbf;
+    border-color: #357cbf;
+}
+
+/* تنسيق زر الحفظ بحجم أكبر */
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 0.5rem 1rem; /* تكبير حجم الحشوة */
+    font-size: 1rem; /* تكبير حجم الخط */
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* زيادة المسافة بين الصفوف في الجدول */
+.table tbody tr {
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* لون خلفية الشريط العلوي */
+nav {
+    background-color: #0C356A;
+}
+
+/* لون خلفية جميع الصفوف */
+.table tr {
+    background-color: #279EFF;
+}
+
+/* لون خلفية الصفوف ذات الأرقام الفردية */
+.table tbody tr:nth-child(odd) {
+    background-color: #40F8FF;
+}
+
+/* لون خلفية الصفوف ذات الأرقام الزوجية */
+.table tbody tr:nth-child(even) {
+    background-color: #D5FFD0;
+}
+
+
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+/* تحسين نموذج الإدخال */
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 3px;
+    border-color: #ced4da;
+}
+
+select.form-control {
+    appearance: none;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    background: transparent;
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16l-4-4h8z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+
+/* تحسين زر الحفظ */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 200px;
+    font-size: 32px;
+    transition: transform 0.3s, box-shadow 0.3s; /* تحديد الخصائص المتغيرة في التأثير */
+
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+    transform: translateY(-3px); /* تحريك الزر قليلاً لأعلى */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
+}
+
+/* تحسين الأيقونات */
+.fa-user-plus,
+.fa-chevron-circle-left,
+.fa-user,
+.fa-briefcase,
+.fa-mobile-alt,
+.fa-layer-group,
+.fa-city,
+.fa-phone,
+.fa-save {
+    color: #007bff;
+}
+
+/* تحسين التنسيق للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-top: 20px;
+    }
+}
+
+.animated-bg {
+    text-align: center;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    background-size: 200% 100%;
+    animation: gradientAnimation 10s ease infinite;
+
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+/* تحسين تركيز حقول الإدخال */
+.form-control:focus {
+    border-color: #3498db; /* تغيير لون الحدود عند التركيز */
+    box-shadow: none; /* إزالة الظل عند التركيز */
+}
+
+/* تحسين لون خلفية حقول الإدخال عند التركيز */
+.form-control:focus {
+    background-color: #f0f0f0;
+}
+
+
+

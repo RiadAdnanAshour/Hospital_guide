@@ -1,0 +1,378 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    direction: rtl;
+
+}
+
+/* تنسيق العنوان */
+h2.text-lg {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* تنسيق حقول الإدخال */
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+/* تنسيق زر البحث */
+sub[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sub:hover {
+    background-color: #357cbf;
+}
+
+/* تنسيق الجدول */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-right:5% ;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.table th, .table td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+/* تنسيق شريط التنقل */
+/* asset/css/style.css */
+
+/* تنسيق شريط التنقل */
+
+.navba {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+
+
+}
+
+nav {
+    background-color: #146C94;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end; /* تبديل العناصر إلى الجهة اليمنى */
+    flex-direction: row-reverse; /* تعكيس ترتيب العناصر */
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    /* تحديد نمط الخط أيضًا إلى none */
+    outline: none;
+    /* إضافة تأثير تحويل سلس */
+    font-size: 20px;
+    transition: text-decoration 0.3s ease;
+
+}
+
+nav a:hover {
+    background-color: #279EFF;
+    color: #279EFF; /* تغيير لون النص عند التحويم */
+    border-radius: 4px; /* إضافة حواف مستديرة */
+}
+
+
+
+.serach {
+    height: 600px; /* ارتفاع ثابت لقسم البحث */
+    overflow-y: auto; /* تمكين التمرير الرأسي للجدول */
+
+}
+
+.action.flex {
+    display: flex;
+    align-items: center; /* محاذاة العناصر عموديًا */
+    justify-content: flex-start; /* محاذاة العناصر أفقيًا */
+}
+
+.action.btn-primary {
+    background-color: #28a745; /* لون أخضر غامق للزر */
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action.btn-primary:hover {
+    background-color: #218838; /* تغيير لون الزر عند التحويم بالماوس */
+}
+
+/* تنسيق زر الحذف */
+.action.btn-danger {
+    background-color: #dc3545; /* لون أحمر غامق للزر */
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action.btn-danger:hover {
+    background-color: #c82333; /* تغيير لون الزر عند التحويم بالماوس */
+}
+
+
+#logoutMenu {
+    min-width: 150px;
+    color: #ffffff; /* لون النص: أبيض */
+    background: #2c3e50; /* لون الخلفية: أزرق داكن */
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+
+}
+
+
+/* تنسيق الجدول */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-right: 5%;
+}
+
+
+
+
+/* تنسيق العنوان */
+h2.text-lg {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* تنسيق المنطقة الرئيسية */
+main {
+    padding: 1rem;
+}
+
+
+
+.serach {
+    height: 600px;
+    overflow-y: auto;
+}
+
+.action.flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.action.btn-primary {
+    background-color: #28a745;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action.btn-primary:hover {
+    background-color: #218838;
+}
+
+.action.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action.btn-danger:hover {
+    background-color: #c82333;
+}
+
+
+
+
+
+/* تأثير الظهور للجدول */
+
+.table.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#currentTime {
+    background-color: #f7fafc;
+    padding: 5px; /* زيادة الحشو لزيادة التباعد العمودي */
+    text-align: left;
+    position: absolute;
+    top: 19%; /* زيادة الانفصال العلوي */
+    left: 2%; /* زيادة الانفصال اليسار */
+    width: 10%;
+    border-radius: 8px; /* إضافة حواف مستديرة */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل للعنصر */
+    z-index: 2;
+}
+
+#timeSpan {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #4a90e2; /* تغيير لون النص */
+}
+
+/* لون خلفية الشريط العلوي */
+nav {
+    background-color: #0C356A;
+}
+
+/* لون خلفية جميع الصفوف */
+.table tr {
+    background-color: #279EFF;
+}
+
+/* لون خلفية الصفوف ذات الأرقام الفردية */
+.table tbody tr:nth-child(odd) {
+    background-color: #40F8FF;
+}
+
+/* لون خلفية الصفوف ذات الأرقام الزوجية */
+.table tbody tr:nth-child(even) {
+    background-color: #D5FFD0;
+}
+
+
+
+ تلوين الأيقونات في شريط التنقل
+.navbar a i {
+    color: #007bff; /* لون الأيقونات في شريط التنقل */
+}
+
+/* تلوين الأيقونات في الجدول */
+.action i,
+#userName i,
+#timeSpan i {
+    color: #007bff; /* لون الأيقونات في الجدول */
+}
+.fa-home {
+    color: #3498db; /* لون الصفحة الرئيسية */
+}
+
+.fa-user-plus {
+    color: #27ae60; /* لون إضافة موظف */
+}
+
+.fa-building {
+    color: #e74c3c; /* لون الأقسام */
+}
+
+.fa-city {
+    color: #f39c12; /* لون المدن */
+}
+
+.fa-users {
+    color: #8e44ad; /* لون إدارة المستخدمين */
+}
+
+.fa-user-cog {
+    color: #34495e; /* لون إدارة الصلاحيات */
+}
+
+.fa-clock {
+    color: #95a5a6; /* لون الساعة */
+}
+
+.fa-user {
+    color: #1abc9c; /* لون اسم المستخدم */
+}
+
+.fa-sign-out-alt {
+    color: #d35400; /* لون تسجيل الخروج */
+}
+
+.fa-edit {
+    color: #f39c12; /* لون زر التعديل */
+}
+
+.fa-trash {
+    color: #1867ce; /* لون زر الحذف */
+}
+
+.fa-briefcase{
+    color: #3498db; /* لون الوظيفة  */
+
+}
+.fa-layer-group {
+    color: #FF0000; /* لون القسم  */
+
+}
+
+.fa-mobile-alt{
+    color: #8e44ad; /* لون أيقونة المدينة */
+
+}
+.fa-phone {
+    color: #27ae60; /* لون أرقام الهاتف */
+}
+
+.fa-map-marker-alt {
+    color: #8e44ad; /* لون أيقونة المدينة */
+}
+
+.fa-search {
+    color: #f39c12; /* لون أيقونة البحث */
+}
+
+.fa-cogs {
+    color: #d35400; /* لون أيقونة الإجراءات (تعديل وحذف) */
+}
+
+.fas.fa-hashtag {
+    color: #FF0000; /* استبدل باللون الذي تريده */
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
