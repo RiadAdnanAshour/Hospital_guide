@@ -46,9 +46,11 @@ class DeptsController extends Controller
         return redirect()->route('dept.index')->with('success', 'Department updated successfully');
     }
 
-    public function destroy($id)
+    public function destroy(Depts $Dept)
     {
-                Depts::findOrFail($id)->delete();
+
+        $Dept= Depts::findOrFail($Dept->id);
+        $Dept->delete();
         return redirect()->route('dept.index');
     }
 }

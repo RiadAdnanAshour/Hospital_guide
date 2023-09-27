@@ -96,6 +96,7 @@ class PersonController extends Controller
 
     public function destroy(Person $person)
     {
+        $person= Person::findOrFail($person->id);
         $person->delete();
         return redirect()->route('home2')->with('success', 'تمت حذف الموظف بنجاح.');
 

@@ -42,6 +42,7 @@ class CityController extends Controller
 
     public function destroy(City $city)
     {
+        $city= City::findOrFail($city->id);
         $city->delete();
         return redirect()->route('city.index');
     }
