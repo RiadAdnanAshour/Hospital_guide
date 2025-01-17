@@ -80,8 +80,6 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Auth::routes();
-
 // تجميع الـ Routes بدون تعارض
 Route::middleware(['auth'])->group(function () {
     Route::resource('roles', RoleController::class);
